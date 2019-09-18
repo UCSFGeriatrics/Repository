@@ -2,8 +2,8 @@
 This is the starting guide to how UCSF Geriatrics constructs and publishes their repositories.
 
 Purpose:
-•	Create a valuable learning resource for our PI’s, MSTAR students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
-•	Adhere to transparency, reproducibility, and practice good science principles as we contribute more new knowledge into the greater scientific community
+- Create a valuable learning resource for our PI’s, MSTAR students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
+- Adhere to transparency, reproducibility, and practice good science principles as we contribute more new knowledge into the greater scientific community
 
 Criteria for GitHub Manuscript Repository:
 -	code needs to be generalizable so please minimize hard coded lines so users can incorporate this into their own analyses
