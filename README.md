@@ -19,3 +19,15 @@ for major steps, if not already indicated, please have a comment indicated for e
 
 -	Verify and check that the code runs correctly (same results as publication) before we upload it into GitHub
 
+We are also in the process of developing best practices on documentation, and the following are considered in our development:
+- Good Programming Practice for Clinical Trials
+http://www.sascommunity.org/wiki/Good_Programming_Practice_for_Clinical_Trials
+
+- Paper 175-2017
+Best Practice Programming Techniques for SAS® Users
+Kirk Paul Lafler, Software Intelligence Corporation, Spring Valley, California
+Mary Rosenbloom, Lake Forest, California
+
+- Paper 2520-2018
+Code Like It Matters: Writing Code That's Readable and Shareable
+Paul Kaefer, UnitedHealthcare, Minnetonka, MN
