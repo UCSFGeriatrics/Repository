@@ -1,7 +1,5 @@
-# Starting-Guide
+# Starting Guide to UCSF Geriatrics Github Code Repository
 This is the starting guide to how UCSF Geriatrics constructs and publishes their repositories.
-
-GitHub Project
 
 Purpose
 •	Create a valuable learning resource for our PI’s, MSTAR students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
