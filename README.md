@@ -20,4 +20,4 @@ for major steps, if not already indicated, please have a comment indicated for e
 -	Verify and check that the code runs correctly (same results as publication) before we upload it into GitHub
 
 # Code Repositories
-- [Charlson Comoribidty Index (using SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity)
+- [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity)
