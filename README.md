@@ -20,9 +20,9 @@ for major steps, if not already indicated, please have a comment indicated for e
 -	Verify and check that the code runs correctly (same results as publication) before we upload it into GitHub
 
 # Code Repositories
-### [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity) - written by: Kathy Fung, MS
+### [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity.md) - written by: Kathy Fung, MS
 
-### Cognitive measures - written by Grisell Diaz-Ramirez, MS
+### [Cognitive measures (for SAS)] (https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CompositeMemoryScore.md) - written by Grisell Diaz-Ramirez, MS
 ###### Publications 
 * Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
 
