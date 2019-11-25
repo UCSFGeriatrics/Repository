@@ -30,7 +30,7 @@ for major steps, if not already indicated, please have a comment indicated for e
 
 * Whitlock EL, Diaz-Ramirez LG, Glymour MM, Boscardin WJ, Covinsky KE, Smith AK. Association Between Persistent Pain and Memory Decline and Dementia in a Longitudinal Cohort of Elders. JAMA Intern Med. 2017 Aug 01; 177(8):1146-1153. doi: 10.1001/jamainternmed.2017.1622. PMID: 28586818.
 
-### ADL/IADL - written by Grisell Diaz-Ramirez, MS
+### [ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/Derived-ADL-IADL.md) - written by Grisell Diaz-Ramirez, MS
 ###### Publications 
 * Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Williams BA, Steinman MA. Association of Functional Impairment in Middle Age With Hospitalization, Nursing Home Admission, and Death. JAMA Intern Med. 2019 Apr 8. doi:10.1001/jamainternmed.2019.0008. PMID: 30958504.
 
