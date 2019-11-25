@@ -1,12 +1,16 @@
 # Composite Memory Score and Dementia Probability Variables
 Writer: Grisel Diaz-Ramirez, MS
+
 Language: SAS
+
 Last Edited: 2019-11-05
 
 This program derive Composite memory score and Dementia probabilities variables following Wu et al., 2002 methodology
 Updated program to include 2016 variables. I used HRS Cognition Imputations 1992-2016 (data: cogimp9216a_r) instead of RAND HRS to get variables for direct assessments 
 
 Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
+
+The code is indicated below but you may also download it [here\(https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/cogvars_gdr_20191105.sas).
 
 ```
 
