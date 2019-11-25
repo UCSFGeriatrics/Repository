@@ -10,7 +10,7 @@ Updated program to include 2016 variables. I used HRS Cognition Imputations 1992
 
 Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
 
-The code is indicated below but you may also download it [here\(https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/cogvars_gdr_20191105.sas).
+The code is indicated below but you may also download it [here](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/cogvars_gdr_20191105.sas).
 
 ```
 
