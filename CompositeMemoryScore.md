@@ -12,6 +12,8 @@ Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Com
 
 The code is indicated below but you may also download it [here](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/cogvars_gdr_20191105.sas).
 
+_______________________________________________________________________________________________________________
+
 ```
 
 /*********** Date completed: 2019.11.05 ***********/
