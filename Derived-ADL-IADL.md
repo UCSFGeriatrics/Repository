@@ -6,17 +6,12 @@ Language: SAS
 Last Edited: 2019-10-15
 
 This dataset contains derived ADL and IADL variables from 1992-2016 HRS waves: 
-						- any ADLdiff (5 adl): bath, bed, dress, eat, toilet
-  						- any ADLdiff (6 adl): bath, bed, dress, eat, toilet, walk
-						- ADLsum (5 adl), ADLsum (6 adl)
-						- ADL dependence 
-						- any ADL dependence (5 adl) , any ADLdep (6 adl)
-
-						- any IADLdiff
-						- IADLsum
-						- IADL help for five task: telephone, money, medicine, shopping, meals
-						- IADL dependence
-						- any IADL dependence
+| IADL/ADL                         | Logic         |
+| -------------------------------- |---------------|
+| eat, toilet                      |any ADLdiff (5 adl): bath, bed, dress |
+| eat, toilet, walk                |ADLsum (5 adl), ADLsum (6 adl); ADL dependence; any ADL dependence (5 adl) , any ADLdep|
+| (6 adl)                          |any IADLdiff; IADLsum; IADL help for five task: telephone|
+| money, medicine, shopping, meals |IADL dependence; any IADL dependence     |
 
 Notes:
 -ADL diff for toilet not asked in wave 1 and 2H
