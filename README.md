@@ -35,3 +35,12 @@ for major steps, if not already indicated, please have a comment indicated for e
 * Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Williams BA, Steinman MA. Association of Functional Impairment in Middle Age With Hospitalization, Nursing Home Admission, and Death. JAMA Intern Med. 2019 Apr 8. doi:10.1001/jamainternmed.2019.0008. PMID: 30958504.
 
 * Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Steinman MA. Functional Impairment and Decline in Middle Age: A Cohort Study. Ann Intern Med. 2017 Dec 05; 167(11):761-768. doi: 10.7326/M17-0496. PMID: 29132150.
+
+# Additional Resources
+### Geriatric Research Algorithms & Statistical Programs (GRASP) - hosted by OAIC National Coordinating Center Site
+https://www.peppercenter.org/public/grasp.cfm
+
+GRASP, a curated list of statistical analysis programs useful to biostatisticians engaged in studies of human aging, is an Internet resource development project of the Claude D. Pepper Older Americans Independence Centers at Yale University, Duke University and Wake Forest University. Development of the content was originally supported by National Institute on Aging grant 2P30 AG021342-06S1 to Yale University and is currently supported by National Institute on Aging grant numbers U24AG05964 for the OAIC CCC and R33 AG045050 for the Aging Initiative. GRASP topics can include downloadable code, sample data, links to online resources and any number of associated documents.
+
+# Cite UCSF Pepper Center 
+NIH Funding Acknowledgment: This resource is made possible by NIH/ NIA funding for the UCSF Pepper Center via the grant P30AG044281.
