@@ -9,7 +9,7 @@ SAS Codes for NHATS ADL/IADL measures variables. Used NHATS data years: 2011-201
 
 Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care Settings and Clinical Characteristics of Older Adults with Moderately Severe Dementia. J Am Geriatr Soc. 2019; 67(9):1907-1912. PMID: 31389002
 
-The code is indicated below but you may also download it [here](https://github.com/
+The code is indicated below but you may also download it [here](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/SASCode_NHAT_ADL_IADL.sas7bdat)
 
 ``` 
 /* ADL variables
