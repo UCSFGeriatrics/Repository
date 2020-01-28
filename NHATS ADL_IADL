@@ -1,12 +1,16 @@
 # SAS Codes for NHATS ADL/IADL Variables 
-
-Writer: Kanan Patel, MS
+Writer: Hanan Patel, MS
 
 Language: SAS
-Last Date Modified: Feb 2019
-About Code: SAS Codes for NHATS ADL/IADL measures variables. Used NHATS data years: 2011-2016. SAS code at year or NHATS wave level. Those wishing to use this for a specific year can do so easily and without much modification. 
-Published paper: Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care Settings and Clinical Characteristics of Older Adults with Moderately Severe Dementia. J Am Geriatr Soc. 2019; 67(9):1907-1912. PMID: 31389002
-The code is indicated below but you may also download it here.
+
+Last Edited: 2019-02
+
+SAS Codes for NHATS ADL/IADL measures variables. Used NHATS data years: 2011-2016. SAS code at year or NHATS wave level. Those wishing to use this for a specific year can do so easily and without much modification.  
+
+Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care Settings and Clinical Characteristics of Older Adults with Moderately Severe Dementia. J Am Geriatr Soc. 2019; 67(9):1907-1912. PMID: 31389002
+
+The code is indicated below but you may also download it [here](https://github.com/
+
  
 /* ADL variables
 sc1deathelp		R1 D HAS HELP EATING
