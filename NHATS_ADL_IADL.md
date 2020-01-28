@@ -1,5 +1,5 @@
 # SAS Codes for NHATS ADL/IADL Variables 
-Writer: Hanan Patel, MS
+Writer: Kanan Patel, MS
 
 Language: SAS
 
