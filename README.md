@@ -36,6 +36,10 @@ for major steps, if not already indicated, please have a comment indicated for e
 
 * Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Steinman MA. Functional Impairment and Decline in Middle Age: A Cohort Study. Ann Intern Med. 2017 Dec 05; 167(11):761-768. doi: 10.7326/M17-0496. PMID: 29132150.
 
+### [NHATS ADL/IADL] (https://)- written by Kanan Patel, MS
+###### Publications
+* Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care Settings and Clinical Characteristics of Older Adults with Moderately Severe Dementia. J Am Geriatr Soc. 2019; 67(9):1907-1912. PMID: 31389002
+
 # Additional Resources
 ### Geriatric Research Algorithms & Statistical Programs (GRASP) - hosted by OAIC National Coordinating Center Site
 https://www.peppercenter.org/public/grasp.cfm
@@ -44,3 +48,4 @@ GRASP, a curated list of statistical analysis programs useful to biostatistician
 
 # Cite UCSF Pepper Center 
 NIH Funding Acknowledgment: This resource is made possible by NIH/ NIA funding for the UCSF Pepper Center via the grant P30AG044281.
+
