@@ -36,7 +36,7 @@ for major steps, if not already indicated, please have a comment indicated for e
 
 * Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Steinman MA. Functional Impairment and Decline in Middle Age: A Cohort Study. Ann Intern Med. 2017 Dec 05; 167(11):761-768. doi: 10.7326/M17-0496. PMID: 29132150.
 
-### [NHATS ADL/IADL] (https://)- written by Kanan Patel, MS
+### [NHATS ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/NHATS_ADL_IADL.md)- written by Kanan Patel, MS
 ###### Publications
 * Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care Settings and Clinical Characteristics of Older Adults with Moderately Severe Dementia. J Am Geriatr Soc. 2019; 67(9):1907-1912. PMID: 31389002
 
