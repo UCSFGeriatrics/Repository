@@ -11,7 +11,7 @@ Harrison KL, Ritchie CS, Patel K, Hunt LJ, Covinsky KE, Yaffe K, Smith AK. Care 
 
 The code is indicated below but you may also download it [here](https://github.com/
 
- 
+``` 
 /* ADL variables
 sc1deathelp		R1 D HAS HELP EATING
 sc1dbathhelp	R1 D HAS HELP WHILE BATHING
@@ -237,3 +237,4 @@ else if r1iadldif{i} ^= . or r1iadlreas{i} ^= .  then r1iadl_dfreas{i}=0; /* all
 r1iadl_sum_dfrea =sum(of r1iadl_dfreas{*}); 
 end;
 run;
+```
