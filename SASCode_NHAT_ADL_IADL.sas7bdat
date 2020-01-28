@@ -1,0 +1,227 @@
+/* ADL variables
+sc1deathelp		R1 D HAS HELP EATING
+sc1dbathhelp	R1 D HAS HELP WHILE BATHING
+sc1dtoilhelp	R1 D HAS HELP WHILE TOILETING
+sc1ddreshelp	R1 D HAS HELP WHILE DRESSING
+mo1dbedhelp		R1 D HELP TO GET OUT OF BED
+mo1dinsdhelp 	R1 D MOVE INSIDE WITH HELP
+mo1douthelp		R1 D GO OUTSIDE USING HELP
+*/
+
+Libname n 'PATH\NHATSfiles' ;run;
+
+option nofmterr;
+option fmtsearch =(work n);
+
+/*format of NHATS variable:
+ ‚       FORMAT NAME: SCEATHLP   
+ ‡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ‰  
+ ‚              -9‚              -9‚-9 Missing                              ‚  
+ ‚              -1‚              -1‚-1 Inapplicable                         ‚  
+ ‚               1‚               1‚1 No help eating in last month          ‚  
+ ‚               2‚               2‚2 Help eating in last month             ‚  
+ ‚               3‚               3‚3 DKRF help eating in last month        ‚  
+ ‚               8‚               8‚8 Not done in last month    
+ 
+‚       FORMAT NAME: HADLSLF   
+ ‡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ‰  
+‚              -9‚     -9‚-9 Missing                              	    ‚  
+‚              -1‚     -1‚-1 Inapplicable                        	          ,
+‚               1‚     1‚1 Did not do by self in last month                 ‚  
+‚               2‚     2‚2 Did by self in last month/no difficulty          ‚  
+‚               3‚     3‚3 Did by self in last month/difficulty             ‚ 
+‚               4‚     4‚4 DKRF did by self in last month/no difficulty     ‚  
+‚               5‚     5‚5 DKRF did by self in last month/difficulty        ‚  
+‚               6‚     6‚6 Did by self in last month/DKRF difficulty        ‚  
+‚               7‚     7‚7 DKRF did by self in last month/DKRF difficulty   ‚
+‚               8‚     8‚8 Not done in last month    
+
+FORMAT NAME: ADL or IADL 
+ ‡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ‰  
+ ‚              -1‚              -1‚NA/DK/RF                                ‚  
+ ‚               0‚               0‚0:No                                    ‚  
+ ‚               1‚               1‚1:Yes  
+*/
+proc format library = n.formats;
+value ADL 1="1:Yes" 0="0:No" -1="NA/DK/RF" ;
+value IADL 1="1:Yes" 0="0:No" -1="NA/DK/RF" ;
+run;
+/* R16_previnc = merged dataset file with NHATS sample person file 2011-2016 with 2016 tracker file */
+/*ADL, 6 items - Help with eating, transferring, walking inside, dressing, bathing, and toileting */
+
+data R16_previnc (drop = i);
+set R16_previnc ;
+array r1adl {*} sc1deathelp  sc1dbathhelp  sc1dtoilhelp sc1ddreshelp  mo1dbedhelp  mo1dinsdhelp ;
+array r1adl_item {*} r1adleat r1adlbath r1adltoil r1adldres r1adlbed r1adlinsd  ;
+
+do i=1 to dim(r1adl_item);
+/* CODE ONLY YES RESPONSES as 1, NO RESPONSES or not missing as 0 */
+if  r1adl {i} = 2 then r1adl_item{i}=1; 
+else if  r1adl{i} ^= . then r1adl_item{i}=0; 
+r1adl_sum =sum(of r1adl_item{*}); 
+end;
+
+array r2adl {*} sc2deathelp  sc2dbathhelp  sc2dtoilhelp sc2ddreshelp  mo2dbedhelp  mo2dinsdhelp   ;
+array r2adl_item {*} r2adleat r2adlbath r2adltoil r2adldres r2adlbed r2adlinsd  ;
+
+do j=1 to dim(r2adl_item);
+if  r2adl {j} = 2 then r2adl_item{j}=1; 
+else if  r2adl{j} ^= . then r2adl_item{j}=0; 
+r2adl_sum =sum(of r2adl_item{*}); 
+end;
+
+array r3adl {*} sc3deathelp  sc3dbathhelp  sc3dtoilhelp sc3ddreshelp  mo3dbedhelp  mo3dinsdhelp   ;
+array r3adl_item {*} r3adleat r3adlbath r3adltoil r3adldres r3adlbed r3adlinsd  ;
+
+do k=1 to dim(r3adl_item);
+if  r3adl {k} = 2 then r3adl_item{k}=1; 
+else if  r3adl{k} ^= . then r3adl_item{k}=0; 
+r3adl_sum =sum(of r3adl_item{*}); 
+end;
+
+array r4adl {*} sc4deathelp  sc4dbathhelp  sc4dtoilhelp sc4ddreshelp  mo4dbedhelp  mo4dinsdhelp    ;
+array r4adl_item {*} r4adleat r4adlbath r4adltoil r4adldres r4adlbed r4adlinsd  ;
+
+do l=1 to dim(r4adl_item);
+if  r4adl {l} = 2 then r4adl_item{l}=1; 
+else if  r4adl{l} ^= . then r4adl_item{l}=0; 
+r4adl_sum =sum(of r4adl_item{*}); 
+end;
+
+array r5adl {*} sc5deathelp  sc5dbathhelp  sc5dtoilhelp sc5ddreshelp  mo5dbedhelp  mo5dinsdhelp     ;
+array r5adl_item {*} r5adleat r5adlbath r5adltoil r5adldres r5adlbed r5adlinsd  ;
+
+do m=1 to dim(r5adl_item);
+if  r5adl {m} = 2 then r5adl_item{m}=1; 
+else if  r5adl{m} ^= . then r5adl_item{m}=0; 
+r5adl_sum =sum(of r5adl_item{*}); 
+end;
+
+array r6adl {*} sc6deathelp  sc6dbathhelp  sc6dtoilhelp sc6ddreshelp  mo6dbedhelp  mo6dinsdhelp  mo6douthelp  ;
+array r6adl_item {*} r6adleat r6adlbath r6adltoil r6adldres r6adlbed r6adlinsd  ;
+
+do n=1 to dim(r6adl_item);
+if  r6adl {n} = 2 then r6adl_item{n}=1; 
+else if  r6adl{n} ^= . then r6adl_item{n}=0; 
+r6adl_sum =sum(of r6adl_item{*}); 
+end; 
+
+run;
+/*Additional ADL - Help moving outside - separate category to report */
+
+data R16_previnc (drop = n);
+set R16_previnc ;
+
+array outhelp {1:6} mo1douthelp mo2douthelp mo3douthelp mo4douthelp mo5douthelp mo6douthelp;
+array adlout {1:6} r1adlout r2adlout r3adlout r4adlout r5adlout r6adlout;
+ 
+do n=1 to 6;
+if  outhelp {n} = 2 then adlout{n}=1; 
+else if  outhelp{n} ^= . then adlout{n}=0; 
+end;
+run;
+/*IADL Variables 
+ha1dlaunsfdf	R1 D LAUNDRY SELF AND DIFF LEVEL
+ha1dshopsfdf 	R1 D SLF SHOPPING AND DIFF LEVEL
+ha1dmealsfdf	R1 D SELF MEALS AND DIFF LEVEL
+mc1dmedssfdf	R1 D DIFF LEVEL MEDICATIONS SELF
+ha1moneyhlp  	R1 HA51 ANYONE HLP W MONY MATTRS
+*/
+/*IADL, 5 items - Help with laundry, shopping, preparing food, managing money, or taking medications */ 
+data R16_previnc (drop = i);
+set R16_previnc ;
+/*IADL, 5 items - laundry, shopping, meal, medication, for money help */
+array r1iadl {*} ha1dlaunsfdf  ha1dshopsfdf  ha1dmealsfdf ha1moneyhlp  mc1dmedssfdf ;
+array r1iadl_item {*} r1iadllaun r1iadlshop r1iadlmeal r1iadlmoney r1iadlmeds ;
+
+do i=1 to dim(r1iadl_item);
+/* CODE ONLY YES RESPONSES as 1, NO RESPONSES or not missing as 0 */
+if r1iadl {i} in ( 1,3) then r1iadl_item{i}=1; 
+else if r1iadl{i} ^= . then r1iadl_item{i}=0; 
+r1iadl_sum =sum(of r1iadl_item{*}); 
+end;
+format r1iadllaun r1iadlshop r1iadlmeal r1iadlmoney r1iadlmeds  IADL.;
+
+array r2iadl {*} ha2dlaunsfdf  ha2dshopsfdf  ha2dmealsfdf ha2moneyhlp  mc2dmedssfdf ;
+array r2iadl_item {*} r2iadllaun r2iadlshop r2iadlmeal r2iadlmoney r2iadlmeds ;
+
+do i=1 to dim(r2iadl_item);
+if r2iadl {i} in ( 1,3) then r2iadl_item{i}=1; 
+else if r2iadl{i} ^= . then r2iadl_item{i}=0; 
+r2iadl_sum =sum(of r2iadl_item{*}); 
+end;
+format r2iadllaun r2iadlshop r2iadlmeal r2iadlmoney r2iadlmeds  IADL.;
+
+array r3iadl {*} ha3dlaunsfdf  ha3dshopsfdf  ha3dmealsfdf ha3moneyhlp  mc3dmedssfdf ;
+array r3iadl_item {*} r3iadllaun r3iadlshop r3iadlmeal r3iadlmoney r3iadlmeds ;
+
+do i=1 to dim(r3iadl_item);
+if r3iadl {i} in ( 1,3) then r3iadl_item{i}=1; 
+else if r3iadl{i} ^= . then r3iadl_item{i}=0; 
+r3iadl_sum =sum(of r3iadl_item{*}); 
+end;
+format r3iadllaun r3iadlshop r3iadlmeal r3iadlmoney r3iadlmeds  IADL.;
+
+array r4iadl {*} ha4dlaunsfdf  ha4dshopsfdf  ha4dmealsfdf ha4moneyhlp  mc4dmedssfdf ;
+array r4iadl_item {*} r4iadllaun r4iadlshop r4iadlmeal r4iadlmoney r4iadlmeds ;
+
+do i=1 to dim(r4iadl_item);
+if r4iadl {i} in ( 1,3) then r4iadl_item{i}=1; 
+else if r4iadl{i} ^= . then r4iadl_item{i}=0; 
+r4iadl_sum =sum(of r4iadl_item{*}); 
+end;
+format r4iadllaun r4iadlshop r4iadlmeal r4iadlmoney r4iadlmeds  IADL.;
+
+array r5iadl {*} ha5dlaunsfdf  ha5dshopsfdf  ha5dmealsfdf ha5moneyhlp  mc5dmedssfdf ;
+array r5iadl_item {*} r5iadllaun r5iadlshop r5iadlmeal r5iadlmoney r5iadlmeds ;
+
+do i=1 to dim(r5iadl_item);
+if r5iadl {i} in ( 1,3) then r5iadl_item{i}=1; 
+else if r5iadl{i} ^= . then r5iadl_item{i}=0; 
+r5iadl_sum =sum(of r5iadl_item{*}); 
+end;
+format r5iadllaun r5iadlshop r5iadlmeal r5iadlmoney r5iadlmeds  IADL.;
+
+array r6iadl {*} ha6dlaunsfdf  ha6dshopsfdf  ha6dmealsfdf ha6moneyhlp  mc6dmedssfdf ;
+array r6iadl_item {*} r6iadllaun r6iadlshop r6iadlmeal r6iadlmoney r6iadlmeds ;
+
+do i=1 to dim(r6iadl_item);
+if r6iadl {i} in ( 1,3) then r6iadl_item{i}=1; 
+else if r6iadl{i} ^= . then r6iadl_item{i}=0; 
+r6iadl_sum =sum(of r6iadl_item{*}); 
+end;
+format r6iadllaun r6iadlshop r6iadlmeal r6iadlmoney r6iadlmeds  IADL.;
+
+run;
+
+/* NHATS has IADL impairment variables that assess the reasons of difficulty. Below is the code if you want to consider IADL difficulty with reason variable */
+
+/* In our paper, we used ha1moneyhlp variable but there is another variable also to use ha1dbanksfdf, with reason variable (ha1dbankreas)–
+ha1moneyhlp		R1 HA51 ANYONE HLP W MONY MATTRS
+ha1dbanksfdf	R1 D SELF BANKS AND DIFF LEVEL
+*/
+
+data R16_previnc (drop = i);
+set R16_previnc ;
+
+/* IADL with reasons for impairment variables, NHATS 2011, Round 1 data 
+Variables 
+ha1dbanksfdf	R1 D SELF BANKS AND DIFF LEVEL
+ha1dlaunreas	R1 D LAUNDRY REASN WITH BY OTHERS
+ha1dshopreas 	R1 D SHOP REASN WITH BY OTHERS
+ha1dmealreas 	R1 D MEALS REASN WITH BY OTHERS
+ha1dbankreas 	R1 D BANK BILL REASN WITH BY OTH
+mc1dmedsreas 	R1 D MEDS REASN BY WITH OTHERS
+*/
+array r1iadldif {*} ha1dbanksfdf  mc1dmedssfdf ha1dlaunsfdf  ha1dshopsfdf  ha1dmealsfdf ;
+array r1iadlreas {*} ha1dbankreas  mc1dmedsreas  ha1dlaunreas ha1dshopreas ha1dmealreas ;
+array r1iadl_dfreas {*} ha1dbanksfdfreas	mc1dmedssfdfreas ha1dlaunsfdfreas  ha1dshopsfdfreas  ha1dmealsfdfreas	 ; 
+
+do i=1 to dim(r1iadl_dfreas);
+if r1iadldif {i} in ( 1,3)  and r1iadlreas {i} in ( 1,3)  then r1iadl_dfreas{i}=1; /* CODE if 1, 3 had difficulty or did not do by self and reasons -health/functional*/
+else if r1iadldif{i} ^= . or r1iadlreas{i} ^= .  then r1iadl_dfreas{i}=0; /* all other no-missing values coded as 0 */
+r1iadl_sum_dfrea =sum(of r1iadl_dfreas{*}); 
+end;
+run;
+
+
