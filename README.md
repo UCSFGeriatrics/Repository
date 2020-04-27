@@ -31,11 +31,9 @@ Division of Hospital Medicine, University of California, San Francisco, CA, USA
 Division of Geriatrics, University of California, San Francisco, CA, USA
 Division of General Internal Medicine, University of California, San Francisco, CA, USA
 
-### [view manuscript](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6694766/)
-### [view repository](https://github.com/sachinjshah/AF-geriatric-syndrome-2014)
+### [view manuscript](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6694766/) | [view repository](https://github.com/sachinjshah/AF-geriatric-syndrome-2014)
 
-####Repository of data cleaning and analytic files used to perform the analysis for the manuscirpt titled "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans"
-
+#### Repository of data cleaning and analytic files used to perform the analysis for the manuscirpt titled "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans"
 
 
 ## "A Novel Method for Identifying a Parsimonious and Accurate Predictive Model for Multiple Clinical Outcomes" 
@@ -45,6 +43,7 @@ Division of Hospital Medicine, University of California, San Francisco, CA, USA
 Division of Geriatrics, University of California, San Francisco, CA, USA
 Division of General Internal Medicine, University of California, San Francisco, CA, USA
 
+### manuscript(under review) | [view repository](https://github.com/sachinjshah/AF-geriatric-syndrome-2014)
 
 
 
