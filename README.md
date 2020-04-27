@@ -41,7 +41,7 @@ Division of Hospital Medicine, University of California, San Francisco, CA, USA
 Division of Geriatrics, University of California, San Francisco, CA, USA
 Division of General Internal Medicine, University of California, San Francisco, CA, USA
 
-### manuscript(under review) | [view repository](https://github.com/sachinjshah/AF-geriatric-syndrome-2014)
+### manuscript(under review) | [view repository](https://github.com/UCSFGeriatrics/multiple-outcomes-selection)
 
 
 
