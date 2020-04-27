@@ -19,15 +19,34 @@ for major steps, if not already indicated, please have a comment indicated for e
 
 -	Verify and check that the code runs correctly (same results as publication) before we upload it into GitHub
 
-# Code Corresponding to Specific Manuscripts
-## AF-geriatric-syndrome-2014 by Dr. Sachin Shah - https://github.com/sachinjshah/AF-geriatric-syndrome-2014
-Repository of data cleaning and analytic files used to perform the analysis for the manuscirpt titled "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans"
 
+
+
+
+# Code Corresponding to Specific Manuscripts
+## "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans" 
 Sachin J. Shah, MD, MPH (1); Margaret C. Fang, MD, MPH (1); Sun Y. Jeon, MS, PhD (2); Steven Gregorich, PhD (3); Kenneth E. Covinsky, MD, MPH (2)
 
 Division of Hospital Medicine, University of California, San Francisco, CA, USA
 Division of Geriatrics, University of California, San Francisco, CA, USA
 Division of General Internal Medicine, University of California, San Francisco, CA, USA
+
+### [view manuscript](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6694766/)
+### [view repository](https://github.com/sachinjshah/AF-geriatric-syndrome-2014)
+
+####Repository of data cleaning and analytic files used to perform the analysis for the manuscirpt titled "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans"
+
+
+
+## "A Novel Method for Identifying a Parsimonious and Accurate Predictive Model for Multiple Clinical Outcomes" 
+L. Grisell Diaz-Ramirez MS,a,b Sei J. Lee MD,a,b Alexander K. Smith MD,a,b Siqi Gan MS,a,b W. John Boscardin PhDa,b
+
+Division of Hospital Medicine, University of California, San Francisco, CA, USA
+Division of Geriatrics, University of California, San Francisco, CA, USA
+Division of General Internal Medicine, University of California, San Francisco, CA, USA
+
+
+
 
 # Code Used in Multiple Manuscripts
 ### [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity.md) - written by: Kathy Fung, MS
