@@ -45,6 +45,13 @@ Division of General Internal Medicine, University of California, San Francisco, 
 
 
 # Code Used in Multiple Manuscripts
+
+### [ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/Derived-ADL-IADL.md) - written by Grisell Diaz-Ramirez, MS
+###### Publications 
+* Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Williams BA, Steinman MA. Association of Functional Impairment in Middle Age With Hospitalization, Nursing Home Admission, and Death. JAMA Intern Med. 2019 Apr 8. doi:10.1001/jamainternmed.2019.0008. PMID: 30958504.
+
+* Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Steinman MA. Functional Impairment and Decline in Middle Age: A Cohort Study. Ann Intern Med. 2017 Dec 05; 167(11):761-768. doi: 10.7326/M17-0496. PMID: 29132150.
+
 ### [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity.md) - written by: Kathy Fung, MS
 
 ### [Cognitive measures (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CompositeMemoryScore.md) - written by Grisell Diaz-Ramirez, MS
@@ -55,11 +62,8 @@ Division of General Internal Medicine, University of California, San Francisco, 
 
 * Whitlock EL, Diaz-Ramirez LG, Glymour MM, Boscardin WJ, Covinsky KE, Smith AK. Association Between Persistent Pain and Memory Decline and Dementia in a Longitudinal Cohort of Elders. JAMA Intern Med. 2017 Aug 01; 177(8):1146-1153. doi: 10.1001/jamainternmed.2017.1622. PMID: 28586818.
 
-### [ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/Derived-ADL-IADL.md) - written by Grisell Diaz-Ramirez, MS
-###### Publications 
-* Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Williams BA, Steinman MA. Association of Functional Impairment in Middle Age With Hospitalization, Nursing Home Admission, and Death. JAMA Intern Med. 2019 Apr 8. doi:10.1001/jamainternmed.2019.0008. PMID: 30958504.
+### [Elixhauser, updated with ICD10]()- written by Bocheng Jing, MS
 
-* Brown RT, Diaz-Ramirez LG, Boscardin WJ, Lee SJ, Steinman MA. Functional Impairment and Decline in Middle Age: A Cohort Study. Ann Intern Med. 2017 Dec 05; 167(11):761-768. doi: 10.7326/M17-0496. PMID: 29132150.
 
 ### [NHATS ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/NHATS_ADL_IADL.md)- written by Kanan Patel, MS
 ###### Publications
