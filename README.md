@@ -1,4 +1,4 @@
-# Introduction to UCSF Geriatrics Github Code Repository
+# Introduction
 
 Purpose:
 * To create a valuable learning resource for our PI’s, medical students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
