@@ -2,7 +2,7 @@
 
 The purpose of this resources is to create a valuable learning resource for our PI’s, medical students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
 
-# Jump to Section
+# Contents
 * [Code Corresponding to Specific Manuscripts](#Code-Corresponding-to-Specific-Manuscripts)
 * [Code Used in Multiple Manuscripts](#Code-Used-in-Multiple-Manuscripts)
   * [ADL/IADL](####[ADL/IADL])
