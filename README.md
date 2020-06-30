@@ -62,7 +62,7 @@ Division of General Internal Medicine, University of California, San Francisco, 
 
 * Whitlock EL, Diaz-Ramirez LG, Glymour MM, Boscardin WJ, Covinsky KE, Smith AK. Association Between Persistent Pain and Memory Decline and Dementia in a Longitudinal Cohort of Elders. JAMA Intern Med. 2017 Aug 01; 177(8):1146-1153. doi: 10.1001/jamainternmed.2017.1622. PMID: 28586818.
 
-### [Elixhauser, updated with ICD10]()- written by Bocheng Jing, MS
+### [Elixhauser, updated with ICD10](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/Elixhauser_ICD9_ICD10_coding.txt)- written by Bocheng Jing, MS
 
 
 ### [NHATS ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/NHATS_ADL_IADL.md)- written by Kanan Patel, MS
