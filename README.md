@@ -53,6 +53,12 @@ Division of General Internal Medicine, University of California, San Francisco, 
 
 #### [Elixhauser, updated with ICD10](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/Elixhauser_ICD9_ICD10_coding.txt)- written by Bocheng Jing, MS
 
+#### [HRS Frailty Measure](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/frailtyscore_gdr_20200729.sas)- written by Grisell Diaz-Ramirez, MS
+###### Note: 
+* this code was based off of the work noted in Cigolle CT, Ofstedal MB, Tian Z, Blaum CS.  Comparing models of frailty: the health and retirement study.  JAGS 2009 May; 57(5):830-9 
+
+###### Publications
+* Whitlock EL, Diaz-Ramirez LG, Smith AK, Boscardin WJ, Avidan MS, Glymour MM. Cognitive Change After Cardiac Surgery Versus Cardiac Catheterization:A Population-Based Study. Ann Thorac Surg. 2019 Apr. 107(4):1119-1125. doi: 10.1016/j.athoracsur.2018.10.021. PMID: 30578068. 
 
 #### [NHATS ADL/IADL](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/NHATS_ADL_IADL.md)- written by Kanan Patel, MS
 ###### Publications
