@@ -3,13 +3,14 @@
 The purpose of this resources is to create a valuable learning resource for our PI’s, medical students, Fellows, and support staff who are increasingly invested in learning more about data analysis to become better researchers
 
 # Contents
-* [Code Corresponding to Specific Manuscripts](#Code-Corresponding-to-Specific-Manuscripts)
-* [Code Used in Multiple Manuscripts](#Code-Used-in-Multiple-Manuscripts)
-  * [ADL/IADL](####[ADL/IADL])
-  * [Charlson Comorbidity Index](####Charlson-Comoribidty-Index-(for-SAS))
-  * [Cognitive Measures for SAS](####Cognitive-measures-(for-SAS))
-  * [Elixhauser Index](####Elixhauser,-updated-with-ICD10)
-  * [National Health and Aging Trends Study (NHATS) ADL/IADL](####NHATS-ADL/IADL)
+* Code Corresponding to Specific Manuscripts
+* Code Used in Multiple Manuscripts]
+  * ADL/IADL
+  * Charlson Comorbidity Index
+  * Cognitive Measures for SAS
+  * Elixhauser Index
+  * HRS Functional Measure
+  * National Health and Aging Trends Study (NHATS) ADL/IADL
 
 # Code Corresponding to Specific Manuscripts
 ### "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans" 
