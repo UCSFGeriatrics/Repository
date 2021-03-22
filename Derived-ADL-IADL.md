@@ -5,7 +5,7 @@ Language: SAS
 
 Last Edited: 2019-03-19
 
-This dataset contains derived ADL and IADL variables from 1992-2016 HRS waves:
+This dataset contains derived ADL and IADL variables from 1992-2018 HRS waves:
 ```
 | IADL/ADL                         | Logic         
 __________________________________________________________________________________________________
