@@ -14,9 +14,6 @@ The purpose of this resources is to create a valuable learning resource for our 
 
 # Code Corresponding to Specific Manuscripts
 
-
-https://github.com/UCSFGeriatrics/hierarchy-functional-impairment#changes-in-the-hierarchy-of-functional-impairment-from-middle-age-to-older-age
-
 ### "Changes in the Hierarchy of Functional Impairment from Middle Age to Older Age"
 Rebecca T. Brown, MD, MPH, L. Grisell Diaz-Ramirez, MS, W. John Boscardin, PhD, Anne R. Cappola, MD, ScM, Sei J. Lee, MD, MAS, Michael A. Steinman, MD
 
