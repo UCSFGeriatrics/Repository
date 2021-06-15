@@ -13,6 +13,15 @@ The purpose of this resources is to create a valuable learning resource for our 
   * National Health and Aging Trends Study (NHATS) ADL/IADL
 
 # Code Corresponding to Specific Manuscripts
+
+
+https://github.com/UCSFGeriatrics/hierarchy-functional-impairment#changes-in-the-hierarchy-of-functional-impairment-from-middle-age-to-older-age
+
+### "Changes in the Hierarchy of Functional Impairment from Middle Age to Older Age"
+Rebecca T. Brown, MD, MPH, L. Grisell Diaz-Ramirez, MS, W. John Boscardin, PhD, Anne R. Cappola, MD, ScM, Sei J. Lee, MD, MAS, Michael A. Steinman, MD
+
+#### manuscript (under review) | [view repository](https://github.com/UCSFGeriatrics/hierarchy-functional-impairment#changes-in-the-hierarchy-of-functional-impairment-from-middle-age-to-older-age)
+
 ### "Geriatric Syndromes and Atrial Fibrillation: Prevalence and Association with Anticoagulant use in a National Cohort of Older Americans" 
 Sachin J. Shah, MD, MPH (1); Margaret C. Fang, MD, MPH (1); Sun Y. Jeon, MS, PhD (2); Steven Gregorich, PhD (3); Kenneth E. Covinsky, MD, MPH (2)
 
