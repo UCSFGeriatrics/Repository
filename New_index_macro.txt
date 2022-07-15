@@ -1,0 +1,142 @@
+/*New Index (Steinman Index) Macro.
+ Description: The New Index was created to predict four outcomes:  ADL decline, IADL decline, Hospitalization and Death Four. 
+			  Each outcome was predicted by different disease factor (risk score)
+	ADL Decline: Heart failure (1), Delirium (1), chronic malaise or fatigue (1), COPD (1),  cognitive impairment NOS (2), 
+				  Parkinson's disease (3), peripheral neuropathy (1),  Osteoarthritis & related disorder (1), Metastatic cancer (3)
+
+	IADL decline: Cognitive impairment (2), Tobacco use (2), Parkinson's disease (2), heart failure (1), COPD (1), Fluid and electrolyte disorders (1),
+				  diabetes with complications (1), Ischemic heart disease (1), Hearing impairment (1), Abnormal gait or difficulty walking (1), 
+				  Weight loss, malnutrition, adult failure to thrive; or debility (1)
+
+	Hospitalization: Venous thromboembolism (2), Tobacco use (2), Back pain and related disorders (2), Diabetes with complications (2), Ischemic heart disease (1)
+					 Heart failure (1), Atrial fibrillation or flutter (1), Arrythmia other than atrial fibrillation/flutter(1), Falls(1),COPD (1),
+					 Fibrotic lung disease, lung disease due to external agents, or other lower respiratory tract disase (2), Fluid and electrolyte disorders (1)
+                     Iron deficiency anemia (1), Degenerative nervous system conditions other than Parkinson's disease (1), Depression (1)
+
+	Death: Metastatic cancer (3), Cognitive impairment (2), Chronic Hematologic Malignancy (2), Heart failure (1), COPD (1), Fluid and electrolyte disorders (1),
+		   Tobacco use (1), Osteoarthritis & related disorders (1), Falls (1), Chronic Skin ulcers (1), Iron Deficiency anemia (1), Other or unspecified anemia (1)
+
+Input datasets: 
+	a. The crosswalk Index_dsease_diagnosis_ICD9.xlsx file that can be downloaded from:
+		
+			The File Index_disease_diagnosis_ICD9.xlsx contains four columns
+			seq_disease_id:A sequence ID for disease categories.
+		    disease_ID: An internal disease ID for disease indicators.
+		    Diseases: Disease Name.
+		    ICD9_dx: ICD9 codes without "."; 
+
+	b. The cohort dataset (e.g. cohort) that contains patient's unique identifier (e.g. ID).
+
+	c. The diagnosis table (e.g.  Medicare_diagnosis_codes) that contains wide format of the ICD9 diagnosis codes.
+
+Example Datasets: We have included two exmaple datasets for use. 
+
+	a. cohort_sample.xlsx -- this is the cohort example that contains the patient's unique identifier variable (e.g. ID). 
+
+    b. medicare_diagnosis_sample.xlsx -- this is the diagnosis codes that contains ID, DGNSCD01-DGNSCD25
+
+*/
+
+/*Step 1. Loading all the disease diagnosis crosswalk table*/
+
+
+LIBNAME index 'c:\index\sas\';
+
+proc import out=index.disease_index datafile='c:\index\sas\Index_disease_diagnosis_ICD9.xlsx' dbms=xlsx replace;run;
+
+/*Step 2. Create disease indicators*/
+
+proc sql;
+	select max(seq_disease_ID) into: max_disease_num
+	from index.disease_index;
+quit;
+
+
+%macro loop;
+%do i=1 %to &max_disease_num;
+
+proc sql;
+	select distinct disease_ID, quote(strip(ICD9_dx)) into: disease_cat, :ICD9 separated by ","
+	from index.disease_index
+	where seq_disease_id=&i.;
+quit;
+
+** Outpatient;
+data diag_&disease_cat;
+  set Medicare_diagnosis_codes;
+  array ICD [*] DGNSCD01-DGNSCD25;
+  disease_flag=0;
+  do i= 1 to 25;
+    if disease_flag=0 and ICD[i] in: (&ICD9)          
+    then disease_flag=1;
+  end;
+run;
+
+proc sql;
+	create table summary_&disease_cat as 
+	select ID, max(disease_flag) as ind_&disease_cat
+	from diag_&disease_cat
+	group by ID
+	order by ID;
+quit;
+
+proc delete data=diag_&disease_cat;run;
+
+%mend loop;
+
+/*Step 3. merge all the indicator together back to the cohort. Note if a disease indicator is missing, then add 0.*/
+
+data cohort_disease;
+	merge cohort(keep=ID) ind:;
+	by ID;
+	array diagnosis _numeric;
+		do over diagnosis;
+			if diagnosis=. then diagnosis=0;
+		end;
+	**adding the metastatic cancer indicator ind_6001;
+	if ind_6001a=1 and ind_6001b=1 then ind_6001=1;else ind_6001=0;
+	label ind_1002='Hearing impairment 0=No 1=Yes'
+		  ind_101='Ischemic heart disease 0=No 1=Yes'
+		  ind_105='Heart Failure 0=No 1=Yes'
+		  ind_108='Atrial fibrillation or flutter 0=No 1=Yes'
+		  ind_109='Arrthyhmias other than atrial fib 0=No 1=Yes'
+		  ind_1101='Chronic skin ulcers 0=No 1=Yes'
+		  ind_1105='Abnormal gait or difficulty walking  0=No 1=Yes'
+		  ind_1107='Falls (Kim + Faurot) 0=No 1=Yes'
+		  ind_1111='Delirim 0=No 1=Yes'
+		  ind_1113='Chronic Malaise or Fatigue 0=No 1=Yes'
+		  ind_1119='Weight loss, malnutrition, adult failure to thrive; or debility 0=No 1=Yes'
+		  ind_202='COPD 0=No 1=Yes'
+		  ind_205='Lung disease d/t external agents; fibrotic lung disease; other 0=No 1=Yes'
+		  ind_5012='Diabetes with complications 0=No 1=Yes'
+		  ind_508='Fluid and electrolyte disorders 0=No 1=Yes'
+		  ind_6001='Metastatic cancer 0=No 1=Yes'
+		  ind_6003='Chronic Hematologic Maligency 0=No 1=Yes'
+		  ind_601='Anemia, iron deficiency 0=No 1=Yes'
+		  ind_602='Other or unspecified anemia 0=No 1=Yes'
+		  ind_603='Venous thromboembolic disease 0=No 1=Yes'
+		  ind_704='Cognitive Impairment 0=No 1=Yes'
+		  ind_715='Parkinsons  0=No 1=Yes'
+		  ind_717='Hereditary and degenerative nervous system conditions other than Parkinsons disease 0=No 1=Yes'
+		  ind_72='peripheral neuropathy 0=No 1=Yes'
+		  ind_801='Tobacco use 0=No 1=Yes'
+		  ind_804='Depression 0=No 1=Yes'
+		  ind_905='Back pain and related disorders 0=No 1=Yes'
+		  ind_914='Osteoarthritis & related disorders 0=No 1=Yes';
+run;
+
+/**step 4. calculating the indice for each outcome*/
+
+data Index_score(keep=ID ADL_index IADL_index hosp_index death_index);
+	set cohort_disease;
+	ADL_index=(1*ind_105)+(1*ind_1111)+(1*ind_1113)+(1*ind_202)+(2*ind_704)+(3*ind_715)+(1*ind_72)+(1*ind_914)+(3*ind_6001);
+
+	IADL_index=(1*ind_1002)+(1*ind_101)+(1*ind_105)+(1*ind_1105)+(1*ind_1119)+(1*ind_202)+(1*ind_508)+(2*ind_704)+(2*ind_715)+(2*ind_801)+(1*ind_5012);
+
+ 	hosp_index=(1*ind_101)+(1*ind_105)+(1*ind_108)+(1*ind_109)+(1*ind_1107)+(1*ind_202)+(1*ind_205)+(1*ind_508)+(1*ind_601)+(2*ind_603)+(1*ind_717)+(2*ind_801)+(1*ind_804)+(2*ind_905)+(2*ind_5012);
+
+	death_index=(1*ind_105)+(1*ind_1101)+(1*ind_1107)+(1*ind_202)+(1*ind_508)+(1*ind_601)+(1*ind_602)+(2*ind_704)+(1*ind_801)+(1*ind_914)+(3*ind_6001)+(2*ind_6003);
+run;
+
+
+	
