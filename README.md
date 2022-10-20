@@ -17,7 +17,7 @@ The purpose of this resources is to create a valuable learning resource for our 
 ### "A comprehensive prognosis tool for older adults: Predicting Death, ADL Disability, and walking Disability simultaneously" 
 Lee AK, Diaz-Ramirez LG, Boscardin WJ, Smith AK, Lee SJ
 
-#### [view manuscript](https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.17932) | [view repository](https://github.com/landonjhaller17/comprehensive-prognosis-tool)
+#### [view manuscript](https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.17932) | [view repository](https://github.com/UCSFGeriatrics/comprehensive-prognosis-tool)
 
 ### "Changes in the Hierarchy of Functional Impairment from Middle Age to Older Age"
 Rebecca T. Brown, MD, MPH, L. Grisell Diaz-Ramirez, MS, W. John Boscardin, PhD, Anne R. Cappola, MD, ScM, Sei J. Lee, MD, MAS, Michael A. Steinman, MD
