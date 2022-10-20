@@ -41,7 +41,7 @@ Division of Hospital Medicine, University of California, San Francisco, CA, USA
 Division of Geriatrics, University of California, San Francisco, CA, USA
 Division of General Internal Medicine, University of California, San Francisco, CA, USA
 
-#### manuscript(under review) | [view repository](https://github.com/UCSFGeriatrics/multiple-outcomes-selection)
+#### [view manuscript](https://www.sciencedirect.com/science/article/pii/S0169260721001486?via%3Dihub) | [view repository](https://github.com/UCSFGeriatrics/multiple-outcomes-selection)
 
 
 
