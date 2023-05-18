@@ -5,9 +5,17 @@ Language: SAS
 
 Last Edited: 2023-05-08
 
-This program derive Composite memory score and Dementia probabilities variables following Wu et al., 2002 methodology from 1995/1996-2020
+This program derive Composite memory score and Dementia probabilities variables following Wu et al., 2013 methodology from 1995/1996-2020
+
+HRS Cognition Imputations 1992-2020 (data: COGIMP9220A_R) data were used instead of RAND HRS to get variables for direct assessments since
+these variables were not available in RAND HRS as of 5/8/2023.
 
 Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
+
+Note that the HRS introduced Internet interviews in 2018 for the first time, and there is evidence that cognitive assessment in internet interviews is different
+(most cognitive questions are easier when they are shown on a screen). The measures computed in this program for 2018 do not take this into consideration.
+
+Also, 2020 measures do not take into consideration the impact of Covid in cognition.
 
 
 The code is indicated below but you may also download it ([here](https://github.com/UCSFGeriatrics/Repository/blob/master/cogvarsred_gdr_20230508)).
