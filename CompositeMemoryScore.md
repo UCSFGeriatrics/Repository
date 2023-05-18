@@ -10,7 +10,7 @@ This program derive Composite memory score and Dementia probabilities variables 
 Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
 
 
-The code is indicated below but you may also download it ([here](https://github.com/UCSFGeriatrics/Repository/blob/master/cogvarsred_gdr_20230508).
+The code is indicated below but you may also download it ([here](https://github.com/UCSFGeriatrics/Repository/blob/master/cogvarsred_gdr_20230508)).
 
 _______________________________________________________________________________________________________________
 
