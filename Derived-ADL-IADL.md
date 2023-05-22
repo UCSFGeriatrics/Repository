@@ -6,33 +6,12 @@ Language: SAS
 Last Edited: 2023-05-10
 
 This dataset contains derived ADL and IADL variables from 1992-2018 HRS waves:
-```
-| IADL/ADL                         | Logic         
-__________________________________________________________________________________________________
-| eat, toilet                      |any ADLdiff (5 adl): bath, bed, dress 
 
-| eat, toilet, walk                |ADLsum (5 adl), ADLsum (6 adl); ADL dependence; any ADL dependence (5 adl), any ADLdep
-
-| (6 adl)                          |any IADLdiff; IADLsum; IADL help for five task: telephone
-
-| money, medicine, shopping, meals |IADL dependence; any IADL dependence
-```
-
-Notes:
--ADL diff for toilet not asked in wave 1 and 2H
--ADL Help variables not present in wave 1 and 2H. So:
-	-We can only know if the participant didn't have ADL dependence by looking at the ADL difficulty variables
--ADLs with special  missing value:.X 'don't do' recoded to "1.yes has limitation"
-
--IADL difficulties not asked in wave 1
--In wave 2H only IADLs: using the phone, taking medications, and managing money
--IADL help variables not present in waves 1 and 2. So:
-	-We can only know if the participant didn't have IADL dependence by looking at the ADL difficulty variables
--IADLs with special  missing value:.X 'don't do' recoded to "0.no limitation"
 
 The code is indicated below or you may also download it [here](https://github.com/UCSFGeriatrics/Repository/blob/master/derived_adl_iadl_gdr_20230510)
 
 _______________________________________________________________________________________________________________
+
 ***********************************************************************************************************************;
 *Title: Derivation of ADL and IADL variables                                                                           ;
 *Purpose: Derive variables from 1992-2020 HRS waves:                                                                   ;
