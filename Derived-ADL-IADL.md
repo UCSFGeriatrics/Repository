@@ -30,7 +30,7 @@ Notes:
 	-We can only know if the participant didn't have IADL dependence by looking at the ADL difficulty variables
 -IADLs with special  missing value:.X 'don't do' recoded to "0.no limitation"
 
-The code is indicated below or you may also download it [here]((https://github.com/UCSFGeriatrics/Repository/blob/master/derived_adl_iadl_gdr_20230510)).
+The code is indicated below or you may also download it [here](https://github.com/UCSFGeriatrics/Repository/blob/master/derived_adl_iadl_gdr_20230510)
 
 _______________________________________________________________________________________________________________
 ***********************************************************************************************************************;
