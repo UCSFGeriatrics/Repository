@@ -3,7 +3,7 @@ Writer: Grisell Diaz-Ramirez, MS
 
 Language: SAS
 
-Last Edited: 2023-05-19
+Last Edited: 2023-05-10
 
 This dataset contains derived ADL and IADL variables from 1992-2018 HRS waves:
 ```
