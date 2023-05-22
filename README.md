@@ -55,7 +55,7 @@ Division of General Internal Medicine, University of California, San Francisco, 
 
 #### [Charlson Comoribidty Index (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CharlsonComorbidity.md) - written by: Kathy Fung, MS
 
-#### [Cognitive measures (for SAS)](https://github.com/UCSFGeriatrics/Manuscript-Code/blob/master/CompositeMemoryScore.md) - written by Grisell Diaz-Ramirez, MS
+#### [Cognitive measures (for SAS)](https://github.com/UCSFGeriatrics/Repository/blob/master/Cognitive-Measures.md) - written by Grisell Diaz-Ramirez, MS
 ###### Publications 
 * Wu Q, Tchetgen Tchetgen EJ, Osypuk TL, White K, Mujahid M, Glymour MM. 2013. Combining Direct and Proxy Assessments to Reduce Attrition Bias in a Longitudinal Study. Alzheimer Dis. Assoc Disord 27, No. 3, pp: 207-212
 
