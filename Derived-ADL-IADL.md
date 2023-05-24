@@ -9,7 +9,6 @@ This dataset contains derived ADL and IADL variables from 1992-2018 HRS waves:
 
 
 The code is indicated below or you may also download it [here](https://github.com/UCSFGeriatrics/Repository/blob/master/derived_adl_iadl_gdr_20230510)
-
 _______________________________________________________________________________________________________________
 
 ***********************************************************************************************************************;
