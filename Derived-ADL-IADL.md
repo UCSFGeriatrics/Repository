@@ -5,12 +5,12 @@ Language: SAS
 
 Last Edited: 2023-05-10
 
-This dataset contains derived ADL and IADL variables from 1992-2018 HRS waves:
+This dataset contains derived ADL and IADL variables from 1992-2020 HRS waves:
 
 
 The code is indicated below or you may also download it [here](https://github.com/UCSFGeriatrics/Repository/blob/master/derived_adl_iadl_gdr_20230510)
 _______________________________________________________________________________________________________________
-
+```
 ***********************************************************************************************************************;
 *Title: Derivation of ADL and IADL variables                                                                           ;
 *Purpose: Derive variables from 1992-2020 HRS waves:                                                                   ;
